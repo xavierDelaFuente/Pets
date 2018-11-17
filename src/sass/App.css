@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'arcadeclassic'; 
+    src: url('../css/arcadeclassic.ttf'); 
+}
+
+
+.provider{
+
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 2em;
+  padding: .5em;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-title {
+  font-family: arcadeclassic;
+  font-size: 1.3em;
+}
+
+.App-intro {
+  font-size: large;
+  position: absolute;
+  align-items: center;
+  text-align: middle;
+}
+
+.App-body {
+  font-size: large;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30em;
+  background-color: #164F6D;
+}
+
+.App-background{
+  height: auto;
+  width: 35%;
+  border-radius: 20em;
+  padding: .5em 0em;
+  z-index: 1; 
+}
+
+.App-background:hover{  
+  transform: scale(1.1);
+  border: .1em solid lightblue;
+}
+
+.App-footer{
+  font-family: arcadeclassic;
+  height: 100%;
+  background-color: black;
+  justify-content: flex-end;
+  display: flex;
+  padding: 0em 1em;
+}
+.App-footer__link{
+  color: white;
+  text-decoration: underline;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.welcomePopup{
+  position: absolute;
+  z-index: 1;
+}
+.welcomePopup-container{
+  display: flex;
+  color: white;
+  flex-direction: column;
+  background-color: steelblue;
+  padding: 2em;
+  border: .1em solid #222;
+  border-radius: 2em;
+}
+.welcomePopup-header{
+  padding: 1em 0em;
+}
+.welcomePopup-body{
+  padding: 1em 0em;
+}
+.welcomePopup-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.welcomePopup-close{
+  padding: 1em;
+}
+.welcomePopup-accept{
+  padding: 1em;
+}
+
+.infoMenu{
+  font-family: arcadeclassic;
+  z-index: 2;
+  border: 0.2em solid #222;;
+  border-radius: 5em;
+  height: 80%;
+  width: 90%; 
+  position: absolute; 
+  background-color: #164F6D;
+  opacity: .95;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.infoMenu-panel-container{
+  height: inherit;
+  padding: 1em;
+}
+.infoMenu-panel{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoMenu-panel-card{
+  display: flex;
+    justify-content: space-between;
+    padding-left: 2em;
+}
+
+.infoMenu-panel--thumb {
+    height: 100%;
+    padding: 4em;
+    opacity: 1;
+}
+.infoMenu-panel--thumb__img{
+      height: 16em;
+    width: 10em;
+}
+
+.infoMenu-panel--title{
+  border-radius: 1em;
+  text-decoration: underline;
+}
+.infoMenu-panel--description{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+  align-items: flex-start;
+  height: 100%;
+  background: lightblue;
+  border: .1em solid tomato;
+  border-radius: 1em;
+}
+
+.infoMenu-panel--description-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+}
+
+.infoMenu-panel--nametitle{
+
+}
+
+
+.infoMenu-panel--row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.infoMenu-panel--friends {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.infoMenu-panel--professions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.infoMenu-panel--name{
+  border: .1em solid tomato;
+  border-radius: 1em;
+  background-color: lightblue;
+  margin: 0.5em 3em;
+}
+
+.infoMenu-panel--name:hover{
+  background-color: cadetblue;
+  cursor: pointer;
+}
+
+.infoMenu-panel-elements--container{
+  flex:3;
+}
+
+.infoMenu-panel-element{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.infoMenu-buttons-container{
+  display: flex;
+  padding: 3em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.infoMenu-buttons-close{
+  height: 3em;
+  border: .1em solid #222;
+  border-radius: 2em;
+  padding: 0 1em;
+  background-color: lightgray;
+  font-family: arcadeclassic;
+}
+.infoMenu-buttons-close:hover{
+  background-color: lightblue;
+  cursor: pointer;
+}
+.infoMenu-panel-sideMenu-elements--container{
+  flex: 2;
+  height: 95%;
+  padding: 0em 1em;
+}
+
+.infoMenu-panel-sideMenu-elements{
+
+}
+
+.is-scrollable{
+  overflow-y: scroll;
+}
+
+.is-scrollable::-webkit-scrollbar {
+    width: 10px;
+}
+
+.is-scrollable::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 1em;
+}
+ 
+.is-scrollable::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    background: #888; 
+}
+
+.is-scrollable::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.tooltip {
+    pointer-events: none;
+    opacity: 0;
+    display: inline-block;
+    position: absolute;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font: bold 14px "Helvetica Neue", Sans-Serif;
+    font-stretch: condensed;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0 0 7px black;
+}
+.tooltip, .arrow:after {
+    background: black;
+    border: 2px solid white;
+}

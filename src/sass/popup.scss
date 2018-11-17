@@ -1,0 +1,29 @@
+.welcomePopup{
+  position: absolute;
+  &-container{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    background-color: steelblue;
+    padding: 2em;
+    border: .1em solid #222;
+    border-radius: 2em;
+    }
+  &-header{
+    padding: 1em 0em;
+  }
+  &-body{
+    padding: 1em 0em;
+  }
+  &-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  &-close{
+    padding: 1em;
+  }
+  &-accept{
+    padding: 1em;
+  }
+}

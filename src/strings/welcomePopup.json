@@ -1,0 +1,9 @@
+{
+	"name": "Welcome Popup",
+	"texts": {
+		"title": "Welcome to the App",
+		"body": "This is some text for the Welcome Popup. I Hope your are okay with beginning this experience",
+		"acceptButton": "",
+		"denyButton": "Ready"
+	}
+}
