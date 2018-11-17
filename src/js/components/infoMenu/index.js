@@ -3,11 +3,11 @@ import PanelMenu from '../../containers/sideMenu'
 
 export default class infoMenu extends Component {
   render() {
-    const { characters, closeInfoMenu, onSetCurrentCharacter } = this.props
+    const { pets, closeInfoMenu, onSetCurrentCharacter } = this.props
 
     return (
       <div className='infoMenu'>
-	     <PanelMenu characters={characters}  closeInfoMenu={closeInfoMenu}/>
+	     <PanelMenu pets={pets}  closeInfoMenu={closeInfoMenu}/>
       </div>
     );
   }

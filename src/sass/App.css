@@ -143,13 +143,13 @@
 }
 
 .infoMenu-panel--thumb {
-    height: 100%;
-    padding: 4em;
-    opacity: 1;
+  padding: 4em;
+  opacity: 1;
+  height: 10em;
+  width: 50%;
 }
 .infoMenu-panel--thumb__img{
-      height: 16em;
-    width: 10em;
+  height: 14em;
 }
 
 .infoMenu-panel--title{
@@ -185,6 +185,10 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.infoMenu-panel--row--descriptionContainer {
+  display: flex;
 }
 
 .infoMenu-panel--friends {

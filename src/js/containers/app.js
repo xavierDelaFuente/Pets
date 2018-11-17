@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { recoverAPIdata } from '../actions/creators/home'
+import { APISuccess } from '../actions/creators/home'
 import App from '../App'
 
 const mapStateToProps = (state, ownProps) => {
@@ -9,8 +9,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-  	getAPIData: ownState => {
-      dispatch(recoverAPIdata())
+  	getAPIData: (pets) => {
+      dispatch(APISuccess())
     }
   }
 }

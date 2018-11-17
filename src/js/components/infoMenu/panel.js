@@ -7,16 +7,16 @@ export default class panelInfoMenu extends Component {
   }
 
   render() {
-    const { characters, onSelectCurrentCharacter, currentCharacter, closeInfoMenu } = this.props
+    const { pets, onSelectCurrentCharacter, currentCharacter, closeInfoMenu } = this.props
 
-    const SideMenu = ({characters, onSelectCurrentCharacter}) => (
+    const SideMenu = ({pets, onSelectCurrentCharacter}) => (
       <div className='infoMenu-panel-sideMenu-elements--container'>
         <div className='infoMenu-panel-elements--container'>
-            <h1 className='infoMenu-panel--title'>{`Characters: `}</h1>
+            <h1 className='infoMenu-panel--title'>{`pets: `}</h1>
         </div>
         <div className='infoMenu-panel-sideMenu-elements--container is-scrollable'>
-        {characters && characters.map((character, i) => (
-          <h3 className='infoMenu-panel-sideMenu-element infoMenu-panel--name' key={character.id} onClick={this.onSelectCharacter.bind(this, character.id)}>{character.name}</h3>
+        {pets && pets.map((pet, i) => (
+          <h3 className='infoMenu-panel-sideMenu-element infoMenu-panel--name' key={pet.id} onClick={this.onSelectCharacter.bind(this, pet.id)}>{pet.name}</h3>
         ))}
         </div>
       </div>
@@ -24,11 +24,13 @@ export default class panelInfoMenu extends Component {
 
     return (
       <div className='infoMenu-panel-container'>
-        { characters && 
+        { pets && 
         <div className='infoMenu-panel'>
-          <SideMenu characters={characters} />
+          <SideMenu pets={pets} />
           <div className='infoMenu-panel-elements--container'>
-            <CardInfoMenu character={characters[currentCharacter]} onSelectCurrentCharacter={onSelectCurrentCharacter} allCharacters={characters}/>
+            { (currentCharacter !== -1) &&
+              <CardInfoMenu pet={pets.filter(pet => pet.id === currentCharacter)} onSelectCurrentCharacter={onSelectCurrentCharacter} allPets={pets}/>
+            }
           </div>
         </div>
         }
