@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'arcadeclassic'; 
+    src: url('../css/arcadeclassic.ttf'); 
+}
+
+
+.App {
+  text-align: center;
+  &-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+  }
+  &-header {
+    background-color: #222;
+    height: 2em;
+    padding: .5em;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  }
+  &-title {
+    font-family: arcadeclassic;
+    font-size: 1.3em;
+  }
+  &-intro {
+    font-size: large;
+    position: absolute;
+    align-items: center;
+    text-align: middle;
+  }
+  -body {
+    font-size: large;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+    background-color: #164F6D;
+  }
+  &-background{
+    height: auto;
+    width: 35%;
+    border-radius: 20em;
+    padding: .5em 0em;
+    z-index: 1; 
+    &:hover{  
+      transform: scale(1.1);
+    }
+  }
+  &-footer{
+    height: 100%;
+    background-color: black;
+    justify-content: flex-end;
+    display: flex;
+    padding: 0em 1em;
+    &__link{
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

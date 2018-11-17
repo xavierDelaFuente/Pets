@@ -1,0 +1,27 @@
+{
+  "name": "brastlewark",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "jest": "^23.4.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "formatjs": "node node_modules/prettier/bin-prettier.js --config ./.prettierrc --write \"src/**/**/*.{js,jsx}\"",
+    "formatcss": "node node_modules/prettier/bin-prettier.js --config ./.prettierrc --write \"scss/**/*.scss\"",
+    "compile:sass": "node node_modules/gulp/bin/gulp.js sass",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
